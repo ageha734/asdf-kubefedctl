@@ -11,7 +11,7 @@ asdf plugin-add kubefedctl https://github.com/ageha734/asdf-kubefedctl
 ```
 
 ```bash
-mise plugin remove kubectl-bindrole
+mise plugin remove kubefedctl
 mise plugin add kubefedctl https://github.com/ageha734/asdf-kubefedctl
 ```
 
