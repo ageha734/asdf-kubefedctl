@@ -21,7 +21,7 @@ get_filename() {
 get_download_url() {
   local version=$1
   local filename=$2
-  echo "https://github.com/kubernetes-sigs/kubefed/releases/download/v${version}/${filename}"
+  echo "https://github.com/kubernetes-retired/kubefed/releases/download/v${version}/${filename}"
 }
 
 install_tool() {
