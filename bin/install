@@ -58,7 +58,7 @@ install_tool() {
   download_path="$tmp_download_dir/"$(get_filename "$version" "$platform" "$binary_name")
 
   echo "Downloading [${binary_name}] from ${download_url} to ${download_path}"
-  curl -s - L "$download_path" -o "$download_url"
+  curl -Lo "$download_path" "$download_url"
 
   echo "Creating bin directory"
   mkdir -p "${bin_install_path}"
