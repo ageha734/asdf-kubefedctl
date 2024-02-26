@@ -6,8 +6,13 @@
 
 ## Install
 
+```bash
+asdf plugin-add kubefedctl https://github.com/ageha734/asdf-kubectl-bindrole
 ```
-asdf plugin-add kubefedctl https://github.com/kvokka/asdf-kubefedctl.git
+
+```bash
+mise plugin remove kubectl-bindrole
+mise plugin add kubefedctl https://github.com/ageha734/asdf-kubectl-bindrole
 ```
 
 ## Use
