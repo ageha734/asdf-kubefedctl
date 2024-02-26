@@ -7,12 +7,12 @@
 ## Install
 
 ```bash
-asdf plugin-add kubefedctl https://github.com/ageha734/asdf-kubectl-bindrole
+asdf plugin-add kubefedctl https://github.com/ageha734/asdf-kubefedctl
 ```
 
 ```bash
 mise plugin remove kubectl-bindrole
-mise plugin add kubefedctl https://github.com/ageha734/asdf-kubectl-bindrole
+mise plugin add kubefedctl https://github.com/ageha734/asdf-kubefedctl
 ```
 
 ## Use
