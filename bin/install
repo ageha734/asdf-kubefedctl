@@ -67,7 +67,7 @@ install_tool() {
   rm -f "$binary_path" 2>/dev/null || true
 
   echo "Extracting archive"
-  tar xf "$download_path" -C "$tmp_download_dir"
+  tar xzpf "$download_path" -C "$tmp_download_dir"
 
   echo "Copying binary"
   cp "$(get_binary_path_in_archive "${tmp_download_dir}" "${binary_name}" "${version}" "${platform}")" "${binary_path}"
