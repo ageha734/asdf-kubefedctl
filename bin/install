@@ -22,17 +22,17 @@ get_platform() {
 }
 
 get_filename() {
-  #local version=$1
+  local version=$1
   local platform="$2"
   local binary_name="$3"
 
-  echo "${binary_name}_${platform}.tar"
+  echo "${binary_name}-${version}_${platform}.tar"
 }
 
 get_download_url() {
   local version=$1
   local filename=$2
-  echo "https://github.com/kubernetes-retired/kubefed/releases/download/${version}/${filename}"
+  echo "https://github.com/kubernetes-retired/kubefed/releases/download/v${version}/${filename}"
 }
 
 get_download_url() {
@@ -82,4 +82,4 @@ install_tool() {
 
 tmp_download_dir="$(mktemp -d -t 'asdf_XXXXXXXX')"
 trap 'rm -rf "${tmp_download_dir}"' EXIT
-install_tool "$ASDF_INSTALL_TYPE" "$ASDF_INSTALL_VERSION" "$ASDF_INSTALL_PATH" "$tmp_download_dir" kubectl-rolesum
+install_tool "$ASDF_INSTALL_TYPE" "$ASDF_INSTALL_VERSION" "$ASDF_INSTALL_PATH" "$tmp_download_dir" kubefedctl
