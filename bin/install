@@ -26,7 +26,7 @@ get_filename() {
   local platform="$2"
   local binary_name="$3"
 
-  echo "${binary_name}-${version}_${platform}.tgz"
+  echo "${binary_name}-${version}-${platform}.tgz"
 }
 
 get_download_url() {
